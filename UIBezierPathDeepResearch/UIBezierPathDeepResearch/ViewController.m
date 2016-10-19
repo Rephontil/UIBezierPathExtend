@@ -11,7 +11,12 @@
 #import "ZYProgressView.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UISlider *progressSlider;
+
+@property (weak, nonatomic) IBOutlet UISlider *sliderProgress;
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+@property (weak, nonatomic) IBOutlet ZYProgressView *progressView;
 
 @end
 
@@ -20,20 +25,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   // UIView *shapeView = [[DrawShape alloc] initWithFrame:[UIScreen mainScreen].bounds];
-   // [self.view addSubview:shapeView];
-  
-   // ZYProgressView *progressView = [[ZYProgressView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  //  [self.view addSubview:progressView];
 }
 
-- (IBAction)slider:(UISlider *)sender {
-    NSLog(@"%0.02f",sender.value);
-    ZYProgressView *view = [[ZYProgressView alloc] init];
-    view.progressValue = sender.value;
+- (IBAction)sliderProgress:(UISlider *)sender {
+    NSLog(@"%0.2f",sender.value);
+    _progressView.progressValue = sender.value;
+    self.label.text = [NSString stringWithFormat:@"%.2f%@",sender.value * 100,@"%"];
+
+
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

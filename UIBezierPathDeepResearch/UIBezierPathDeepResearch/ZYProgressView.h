@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ZYProgressView : UIView
-@property (nonatomic, strong)UISlider *progressSlider;
 @property (nonatomic, assign)CGFloat progressValue;
 @end
