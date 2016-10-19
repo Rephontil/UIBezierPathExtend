@@ -15,6 +15,8 @@
 		278C0B2E1DB76EAD0006FCE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278C0B2C1DB76EAD0006FCE5 /* LaunchScreen.storyboard */; };
 		278C0B391DB76EAD0006FCE5 /* UIBezierPathDeepResearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B381DB76EAD0006FCE5 /* UIBezierPathDeepResearchTests.m */; };
 		278C0B441DB76EAD0006FCE5 /* UIBezierPathDeepResearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B431DB76EAD0006FCE5 /* UIBezierPathDeepResearchUITests.m */; };
+		278C0B551DB76F6A0006FCE5 /* DrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B521DB76F6A0006FCE5 /* DrawLine.m */; };
+		278C0B561DB76F6A0006FCE5 /* DrawShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B541DB76F6A0006FCE5 /* DrawShape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		278C0B3F1DB76EAD0006FCE5 /* UIBezierPathDeepResearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIBezierPathDeepResearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278C0B431DB76EAD0006FCE5 /* UIBezierPathDeepResearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathDeepResearchUITests.m; sourceTree = "<group>"; };
 		278C0B451DB76EAD0006FCE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278C0B511DB76F6A0006FCE5 /* DrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLine.h; sourceTree = "<group>"; };
+		278C0B521DB76F6A0006FCE5 /* DrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLine.m; sourceTree = "<group>"; };
+		278C0B531DB76F6A0006FCE5 /* DrawShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawShape.h; sourceTree = "<group>"; };
+		278C0B541DB76F6A0006FCE5 /* DrawShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawShape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				278C0B221DB76EAC0006FCE5 /* AppDelegate.m */,
 				278C0B241DB76EAC0006FCE5 /* ViewController.h */,
 				278C0B251DB76EAC0006FCE5 /* ViewController.m */,
+				278C0B511DB76F6A0006FCE5 /* DrawLine.h */,
+				278C0B521DB76F6A0006FCE5 /* DrawLine.m */,
+				278C0B531DB76F6A0006FCE5 /* DrawShape.h */,
+				278C0B541DB76F6A0006FCE5 /* DrawShape.m */,
 				278C0B271DB76EAC0006FCE5 /* Main.storyboard */,
 				278C0B2A1DB76EAD0006FCE5 /* Assets.xcassets */,
 				278C0B2C1DB76EAD0006FCE5 /* LaunchScreen.storyboard */,
@@ -279,6 +289,8 @@
 				278C0B261DB76EAC0006FCE5 /* ViewController.m in Sources */,
 				278C0B231DB76EAC0006FCE5 /* AppDelegate.m in Sources */,
 				278C0B201DB76EAC0006FCE5 /* main.m in Sources */,
+				278C0B561DB76F6A0006FCE5 /* DrawShape.m in Sources */,
+				278C0B551DB76F6A0006FCE5 /* DrawLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

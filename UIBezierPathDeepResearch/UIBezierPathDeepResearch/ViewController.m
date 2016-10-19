@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#include "DrawShape.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIView *shapeView = [[DrawShape alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:shapeView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
