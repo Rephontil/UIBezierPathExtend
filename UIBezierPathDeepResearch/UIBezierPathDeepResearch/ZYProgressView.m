@@ -32,7 +32,7 @@
     CGFloat startAngle = - M_PI * 0.5;
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:70 startAngle:startAngle endAngle:startAngle + _progressValue *2*M_PI clockwise:YES];
     if (_progressValue == 1.00) {
-        [[UIColor redColor] setStroke];
+        [[UIColor redColor] set];
         [path setLineWidth:5];
     }
     [path stroke];

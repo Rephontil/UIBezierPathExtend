@@ -42,10 +42,19 @@
                                     <action selector="sliderProgress:" destination="BYZ-38-t0r" eventType="valueChanged" id="ouq-Vh-DCy"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htR-5E-qVh" customClass="ZYPieChartView">
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Z7R-02-Xri"/>
+                                    <constraint firstAttribute="width" constant="160" id="sdO-4Q-Ohp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DTA-mC-RbX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Jx-es-OOA"/>
+                            <constraint firstItem="DTA-mC-RbX" firstAttribute="top" secondItem="htR-5E-qVh" secondAttribute="bottom" constant="40" id="Tms-on-nwx"/>
+                            <constraint firstItem="htR-5E-qVh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U7j-D0-xbs"/>
                             <constraint firstItem="DTA-mC-RbX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b2U-oB-lnt"/>
                             <constraint firstItem="DTA-mC-RbX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="238" id="gXP-Tl-qzM"/>
                         </constraints>
