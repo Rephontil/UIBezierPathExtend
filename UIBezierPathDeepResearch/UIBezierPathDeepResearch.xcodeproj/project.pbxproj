@@ -17,6 +17,7 @@
 		278C0B441DB76EAD0006FCE5 /* UIBezierPathDeepResearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B431DB76EAD0006FCE5 /* UIBezierPathDeepResearchUITests.m */; };
 		278C0B551DB76F6A0006FCE5 /* DrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B521DB76F6A0006FCE5 /* DrawLine.m */; };
 		278C0B561DB76F6A0006FCE5 /* DrawShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B541DB76F6A0006FCE5 /* DrawShape.m */; };
+		278C0B591DB778400006FCE5 /* ZYProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B581DB778400006FCE5 /* ZYProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		278C0B521DB76F6A0006FCE5 /* DrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLine.m; sourceTree = "<group>"; };
 		278C0B531DB76F6A0006FCE5 /* DrawShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawShape.h; sourceTree = "<group>"; };
 		278C0B541DB76F6A0006FCE5 /* DrawShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawShape.m; sourceTree = "<group>"; };
+		278C0B571DB778400006FCE5 /* ZYProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYProgressView.h; sourceTree = "<group>"; };
+		278C0B581DB778400006FCE5 /* ZYProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				278C0B521DB76F6A0006FCE5 /* DrawLine.m */,
 				278C0B531DB76F6A0006FCE5 /* DrawShape.h */,
 				278C0B541DB76F6A0006FCE5 /* DrawShape.m */,
+				278C0B571DB778400006FCE5 /* ZYProgressView.h */,
+				278C0B581DB778400006FCE5 /* ZYProgressView.m */,
 				278C0B271DB76EAC0006FCE5 /* Main.storyboard */,
 				278C0B2A1DB76EAD0006FCE5 /* Assets.xcassets */,
 				278C0B2C1DB76EAD0006FCE5 /* LaunchScreen.storyboard */,
@@ -286,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278C0B591DB778400006FCE5 /* ZYProgressView.m in Sources */,
 				278C0B261DB76EAC0006FCE5 /* ViewController.m in Sources */,
 				278C0B231DB76EAC0006FCE5 /* AppDelegate.m in Sources */,
 				278C0B201DB76EAC0006FCE5 /* main.m in Sources */,

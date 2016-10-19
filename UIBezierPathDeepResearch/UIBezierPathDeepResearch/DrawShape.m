@@ -18,7 +18,7 @@
 }
 
 //只有画曲线的时候才会使用原始的方法quartz 2D  其他的都是用UIBezier Path
-
+//drawrect方法不能手动调用,因为图形上下文我们自己创建不了,只能由系统帮我们创建.并且由系统传递给我们.
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
@@ -60,9 +60,6 @@
     [pathCircle fill];
     [pathCircle stroke];
 
-
-    
-    
 
 }
 

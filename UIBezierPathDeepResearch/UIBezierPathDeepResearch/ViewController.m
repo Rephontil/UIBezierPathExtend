@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #include "DrawShape.h"
+#import "ZYProgressView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *progressSlider;
 
 @end
 
@@ -17,10 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIView *shapeView = [[DrawShape alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.view addSubview:shapeView];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+   // UIView *shapeView = [[DrawShape alloc] initWithFrame:[UIScreen mainScreen].bounds];
+   // [self.view addSubview:shapeView];
+  
+   // ZYProgressView *progressView = [[ZYProgressView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  //  [self.view addSubview:progressView];
 }
+
+- (IBAction)slider:(UISlider *)sender {
+    NSLog(@"%0.02f",sender.value);
+    ZYProgressView *view = [[ZYProgressView alloc] init];
+    view.progressValue = sender.value;
+}
+
 
 
 - (void)didReceiveMemoryWarning {
