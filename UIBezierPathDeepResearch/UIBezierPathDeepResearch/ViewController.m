@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"%@",[self class]);
 }
 
 - (IBAction)sliderProgress:(UISlider *)sender {
@@ -39,6 +39,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"我们是好孩子！");
+}
+
 
 
 @end
