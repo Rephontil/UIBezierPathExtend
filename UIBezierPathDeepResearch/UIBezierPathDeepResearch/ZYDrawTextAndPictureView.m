@@ -28,7 +28,7 @@
 
     attributeDic[NSStrokeColorAttributeName] = [UIColor greenColor];
     [str drawInRect:rect withAttributes:attributeDic];
-    
+    NSLog(@"nnnnnnnn");
     
 }
 

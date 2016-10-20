@@ -249,7 +249,7 @@
 				TargetAttributes = {
 					278C0B1A1DB76EAC0006FCE5 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5TL9A86CZ3;
+						DevelopmentTeam = XXRZJ9B3W5;
 						ProvisioningStyle = Automatic;
 					};
 					278C0B331DB76EAD0006FCE5 = {
@@ -475,7 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5TL9A86CZ3;
+				DEVELOPMENT_TEAM = XXRZJ9B3W5;
 				INFOPLIST_FILE = UIBezierPathDeepResearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidstone.UIBezierPathDeepResearch;
@@ -487,7 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5TL9A86CZ3;
+				DEVELOPMENT_TEAM = XXRZJ9B3W5;
 				INFOPLIST_FILE = UIBezierPathDeepResearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidstone.UIBezierPathDeepResearch;
