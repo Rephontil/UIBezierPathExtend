@@ -17,10 +17,10 @@
     NSString *str = @"Only override drawRect: if you perform custom drawing.";
     
     NSMutableDictionary *attributeDic = [[NSMutableDictionary alloc] initWithCapacity:0];
-    attributeDic[@"NSFontAttributeName"] = [UIFont systemFontOfSize:30];
-    
-    
-    
+    attributeDic[NSFontAttributeName] = [UIFont systemFontOfSize:15];
+    attributeDic[NSForegroundColorAttributeName] = [UIColor yellowColor];
+    attributeDic[NSStrokeWidthAttributeName] = @3;
+    attributeDic[NSStrokeColorAttributeName] = [UIColor greenColor];
     [str drawInRect:rect withAttributes:attributeDic];
     
     

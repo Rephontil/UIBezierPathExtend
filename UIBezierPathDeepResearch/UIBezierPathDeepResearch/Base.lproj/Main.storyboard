@@ -49,6 +49,13 @@
                                     <constraint firstAttribute="width" constant="160" id="sdO-4Q-Ohp"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-EB-ZNe" customClass="ZYDrawTextAndPictureView">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="EL1-0d-cwG"/>
+                                    <constraint firstAttribute="width" constant="160" id="yAN-dY-OdK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,7 +63,9 @@
                             <constraint firstItem="DTA-mC-RbX" firstAttribute="top" secondItem="htR-5E-qVh" secondAttribute="bottom" constant="40" id="Tms-on-nwx"/>
                             <constraint firstItem="htR-5E-qVh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U7j-D0-xbs"/>
                             <constraint firstItem="DTA-mC-RbX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b2U-oB-lnt"/>
+                            <constraint firstItem="RcU-EB-ZNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZT-e2-0us"/>
                             <constraint firstItem="DTA-mC-RbX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="238" id="gXP-Tl-qzM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RcU-EB-ZNe" secondAttribute="bottom" constant="20" id="tGQ-aJ-fge"/>
                         </constraints>
                     </view>
                     <connections>
