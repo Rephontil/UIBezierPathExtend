@@ -31,6 +31,7 @@
     CGPoint center = CGPointMake(rect.size.width/2, rect.size.height/2);
     CGFloat startAngle = - M_PI * 0.5;
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:70 startAngle:startAngle endAngle:startAngle + _progressValue *2*M_PI clockwise:YES];
+    [path setLineWidth:3];
     if (_progressValue == 1.00) {
         [[UIColor redColor] set];
         [path setLineWidth:5];
