@@ -20,6 +20,12 @@
     attributeDic[NSFontAttributeName] = [UIFont systemFontOfSize:15];
     attributeDic[NSForegroundColorAttributeName] = [UIColor yellowColor];
     attributeDic[NSStrokeWidthAttributeName] = @3;
+    
+    NSShadow *shade = [[NSShadow alloc] init];
+    shade.shadowColor = [UIColor redColor];
+    shade.shadowOffset = CGSizeMake(2, 10);
+    attributeDic[NSShadowAttributeName] = shade;
+
     attributeDic[NSStrokeColorAttributeName] = [UIColor greenColor];
     [str drawInRect:rect withAttributes:attributeDic];
     
