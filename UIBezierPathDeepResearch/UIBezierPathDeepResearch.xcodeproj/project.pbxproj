@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		273A1C361DB898EC006F85E3 /* UIViewController+Examine.m in Sources */ = {isa = PBXBuildFile; fileRef = 273A1C351DB898EC006F85E3 /* UIViewController+Examine.m */; };
 		2783DA651DB8C6EC00096AC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2783DA641DB8C6EC00096AC0 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		2783DA681DB8CD9C00096AC0 /* ZYDrawTextAndPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2783DA671DB8CD9C00096AC0 /* ZYDrawTextAndPictureView.m */; };
 		278C0B201DB76EAC0006FCE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B1F1DB76EAC0006FCE5 /* main.m */; };
 		278C0B231DB76EAC0006FCE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B221DB76EAC0006FCE5 /* AppDelegate.m */; };
 		278C0B261DB76EAC0006FCE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B251DB76EAC0006FCE5 /* ViewController.m */; };
@@ -44,6 +45,8 @@
 		273A1C341DB898EC006F85E3 /* UIViewController+Examine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Examine.h"; sourceTree = "<group>"; };
 		273A1C351DB898EC006F85E3 /* UIViewController+Examine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Examine.m"; sourceTree = "<group>"; };
 		2783DA641DB8C6EC00096AC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2783DA661DB8CD9C00096AC0 /* ZYDrawTextAndPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDrawTextAndPictureView.h; sourceTree = "<group>"; };
+		2783DA671DB8CD9C00096AC0 /* ZYDrawTextAndPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDrawTextAndPictureView.m; sourceTree = "<group>"; };
 		278C0B1B1DB76EAC0006FCE5 /* UIBezierPathDeepResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIBezierPathDeepResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278C0B1F1DB76EAC0006FCE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		278C0B211DB76EAC0006FCE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				278C0B581DB778400006FCE5 /* ZYProgressView.m */,
 				8E9DDA7D1DB7D9FB00381C78 /* ZYPieChartView.h */,
 				8E9DDA7E1DB7D9FB00381C78 /* ZYPieChartView.m */,
+				2783DA661DB8CD9C00096AC0 /* ZYDrawTextAndPictureView.h */,
+				2783DA671DB8CD9C00096AC0 /* ZYDrawTextAndPictureView.m */,
 				278C0B271DB76EAC0006FCE5 /* Main.storyboard */,
 				278C0B2A1DB76EAD0006FCE5 /* Assets.xcassets */,
 				278C0B2C1DB76EAD0006FCE5 /* LaunchScreen.storyboard */,
@@ -315,6 +320,7 @@
 			files = (
 				278C0B591DB778400006FCE5 /* ZYProgressView.m in Sources */,
 				8E9DDA7F1DB7D9FB00381C78 /* ZYPieChartView.m in Sources */,
+				2783DA681DB8CD9C00096AC0 /* ZYDrawTextAndPictureView.m in Sources */,
 				278C0B261DB76EAC0006FCE5 /* ViewController.m in Sources */,
 				278C0B231DB76EAC0006FCE5 /* AppDelegate.m in Sources */,
 				273A1C361DB898EC006F85E3 /* UIViewController+Examine.m in Sources */,
