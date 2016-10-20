@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		273A1C361DB898EC006F85E3 /* UIViewController+Examine.m in Sources */ = {isa = PBXBuildFile; fileRef = 273A1C351DB898EC006F85E3 /* UIViewController+Examine.m */; };
+		2783DA651DB8C6EC00096AC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2783DA641DB8C6EC00096AC0 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		278C0B201DB76EAC0006FCE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B1F1DB76EAC0006FCE5 /* main.m */; };
 		278C0B231DB76EAC0006FCE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B221DB76EAC0006FCE5 /* AppDelegate.m */; };
 		278C0B261DB76EAC0006FCE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C0B251DB76EAC0006FCE5 /* ViewController.m */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		273A1C341DB898EC006F85E3 /* UIViewController+Examine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Examine.h"; sourceTree = "<group>"; };
 		273A1C351DB898EC006F85E3 /* UIViewController+Examine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Examine.m"; sourceTree = "<group>"; };
+		2783DA641DB8C6EC00096AC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		278C0B1B1DB76EAC0006FCE5 /* UIBezierPathDeepResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIBezierPathDeepResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278C0B1F1DB76EAC0006FCE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		278C0B211DB76EAC0006FCE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2783DA651DB8C6EC00096AC0 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2783DA631DB8C6EC00096AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2783DA641DB8C6EC00096AC0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		278C0B121DB76EAC0006FCE5 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +111,7 @@
 				278C0B371DB76EAD0006FCE5 /* UIBezierPathDeepResearchTests */,
 				278C0B421DB76EAD0006FCE5 /* UIBezierPathDeepResearchUITests */,
 				278C0B1C1DB76EAC0006FCE5 /* Products */,
+				2783DA631DB8C6EC00096AC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

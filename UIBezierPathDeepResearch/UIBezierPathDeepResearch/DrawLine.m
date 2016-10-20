@@ -35,6 +35,7 @@
     
     [bezierPath stroke];
 
+
 }
 
 - (void)drawLine1{
