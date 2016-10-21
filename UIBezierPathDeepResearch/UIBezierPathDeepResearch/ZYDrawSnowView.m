@@ -22,8 +22,6 @@ static CGFloat heigth = 0;
 
 - (void)drawRect:(CGRect)rect {
     NSLog(@"%s",__func__);
-
-    // Drawing code
     heigth += 10;
     CGFloat width = arc4random_uniform(375);
     UIImage *image = [UIImage imageNamed:@"snow"];
