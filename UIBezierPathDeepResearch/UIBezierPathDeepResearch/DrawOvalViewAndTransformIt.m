@@ -22,7 +22,7 @@
     
     path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(50, 200, 200, 100)];
     
-    CGContextTranslateCTM(ctx, 220, 200);
+    CGContextTranslateCTM(ctx, 350, 200);
     
     CGContextRotateCTM(ctx, M_PI_4 + M_PI * _scaleAngle);
     
@@ -33,6 +33,7 @@
     CGContextStrokePath(ctx);
     
 }
+
 
 - (void)setScaleAngle:(CGFloat)scaleAngle
 {

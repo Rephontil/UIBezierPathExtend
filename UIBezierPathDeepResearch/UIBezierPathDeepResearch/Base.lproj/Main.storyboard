@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -220,11 +220,23 @@
                                     <segue destination="I7I-pp-2Ad" kind="show" id="p0l-Iq-90j"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAN-eB-FER">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="H7t-cR-Tgm"/>
+                                    <constraint firstAttribute="height" constant="30" id="KZh-Qp-N88"/>
+                                </constraints>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <segue destination="gGS-Xm-Ots" kind="show" id="sRV-CC-uE0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.84085338951301147" green="1" blue="0.86246943216329908" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="om3-sr-ilr" firstAttribute="leading" secondItem="21F-qI-aa3" secondAttribute="leading" constant="20" id="0bM-aY-B8v"/>
                             <constraint firstItem="3aE-q6-Vfs" firstAttribute="top" secondItem="om3-sr-ilr" secondAttribute="bottom" constant="20" id="4BS-9x-rog"/>
+                            <constraint firstItem="3aE-q6-Vfs" firstAttribute="top" secondItem="bAN-eB-FER" secondAttribute="bottom" constant="20" id="N7K-FU-cJO"/>
+                            <constraint firstAttribute="trailing" secondItem="bAN-eB-FER" secondAttribute="trailing" constant="20" id="eTx-97-iGK"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -232,9 +244,55 @@
             </objects>
             <point key="canvasLocation" x="2441" y="132"/>
         </scene>
+        <!--Water Text View Controller-->
+        <scene sceneID="zcn-MR-JUx">
+            <objects>
+                <viewController id="gGS-Xm-Ots" customClass="WaterTextViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lsn-22-7Gv"/>
+                        <viewControllerLayoutGuide type="bottom" id="61M-YY-Fol"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T3c-bm-1Qi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv1-Jw-Jta">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bd4-Oj-wtr"/>
+                                    <constraint firstAttribute="width" constant="60" id="hm9-HG-ejW"/>
+                                </constraints>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="dyC-lL-byr" kind="show" id="pt0-Ho-r1R"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AfT-am-L50">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Sxf-dO-qek"/>
+                                    <constraint firstAttribute="height" constant="150" id="WJk-8Z-4J7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52022480159999995" green="0.8079118421" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AfT-am-L50" firstAttribute="centerX" secondItem="T3c-bm-1Qi" secondAttribute="centerX" id="OhC-uW-Cgo"/>
+                            <constraint firstItem="AfT-am-L50" firstAttribute="centerY" secondItem="T3c-bm-1Qi" secondAttribute="centerY" id="OvU-cY-eY3"/>
+                            <constraint firstItem="bv1-Jw-Jta" firstAttribute="leading" secondItem="T3c-bm-1Qi" secondAttribute="leading" constant="20" id="clI-Qv-B29"/>
+                            <constraint firstItem="61M-YY-Fol" firstAttribute="top" secondItem="bv1-Jw-Jta" secondAttribute="bottom" constant="20" id="dme-KB-MrV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="AfT-am-L50" id="hMh-Hb-D2R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85j-5D-Hc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3138" y="132"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="p0l-Iq-90j"/>
         <segue reference="8AB-Sc-FTr"/>
+        <segue reference="p0l-Iq-90j"/>
+        <segue reference="pt0-Ho-r1R"/>
     </inferredMetricsTieBreakers>
 </document>
