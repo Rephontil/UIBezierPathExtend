@@ -30,7 +30,6 @@ static CGFloat heigth = 0;
     if (heigth > rect.size.height) {
         heigth = 0;
     }
-
 }
 
 // 只加载一次
