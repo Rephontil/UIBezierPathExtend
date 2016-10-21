@@ -27,7 +27,7 @@
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-      NSLog(@"%s",__func__);
+    NSLog(@"%s",__func__);
     CGPoint center = CGPointMake(rect.size.width/2, rect.size.height/2);
     CGFloat startAngle = - M_PI * 0.5;
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:70 startAngle:startAngle endAngle:startAngle + _progressValue *2*M_PI clockwise:YES];

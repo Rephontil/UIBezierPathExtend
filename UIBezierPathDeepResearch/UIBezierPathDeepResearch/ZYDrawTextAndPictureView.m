@@ -28,6 +28,7 @@
 
 
     attributeDic[NSStrokeColorAttributeName] = [UIColor greenColor];
+    //设置文字的富文本属性 withAttributes
     [str drawInRect:rect withAttributes:attributeDic];
 
     //裁剪,裁剪的步骤一定要放在渲染的步骤之前进行.

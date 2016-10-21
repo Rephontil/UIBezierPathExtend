@@ -24,7 +24,9 @@
 		27B762351DB9ABC8004CC2BC /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B762341DB9ABC8004CC2BC /* NextViewController.m */; };
 		27B762381DB9ACD8004CC2BC /* ZYCustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B762371DB9ACD8004CC2BC /* ZYCustomImageView.m */; };
 		27B7623B1DB9BECE004CC2BC /* SnowShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7623A1DB9BECE004CC2BC /* SnowShowViewController.m */; };
-		27B7623E1DB9C2ED004CC2BC /* ZYDrawSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7623D1DB9C2EC004CC2BC /* ZYDrawSnowView.m */; };
+		27B762401DB9E8B9004CC2BC /* ZYDrawSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7623D1DB9C2EC004CC2BC /* ZYDrawSnowView.m */; };
+		27B762431DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B762421DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m */; };
+		27B762461DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B762451DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m */; };
 		8E9DDA7F1DB7D9FB00381C78 /* ZYPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DDA7E1DB7D9FB00381C78 /* ZYPieChartView.m */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,10 @@
 		27B7623A1DB9BECE004CC2BC /* SnowShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowShowViewController.m; sourceTree = "<group>"; };
 		27B7623C1DB9C2EC004CC2BC /* ZYDrawSnowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDrawSnowView.h; sourceTree = "<group>"; };
 		27B7623D1DB9C2EC004CC2BC /* ZYDrawSnowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDrawSnowView.m; sourceTree = "<group>"; };
+		27B762411DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawOvalViewAndTransformIt.h; sourceTree = "<group>"; };
+		27B762421DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawOvalViewAndTransformIt.m; sourceTree = "<group>"; };
+		27B762441DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawOvalAndTransformViewController.h; sourceTree = "<group>"; };
+		27B762451DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawOvalAndTransformViewController.m; sourceTree = "<group>"; };
 		8E9DDA7D1DB7D9FB00381C78 /* ZYPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPieChartView.h; sourceTree = "<group>"; };
 		8E9DDA7E1DB7D9FB00381C78 /* ZYPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPieChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +165,10 @@
 				273A1C351DB898EC006F85E3 /* UIViewController+Examine.m */,
 				278C0B511DB76F6A0006FCE5 /* DrawLine.h */,
 				278C0B521DB76F6A0006FCE5 /* DrawLine.m */,
+				27B762411DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.h */,
+				27B762421DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m */,
+				27B762441DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.h */,
+				27B762451DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m */,
 				278C0B531DB76F6A0006FCE5 /* DrawShape.h */,
 				278C0B541DB76F6A0006FCE5 /* DrawShape.m */,
 				278C0B571DB778400006FCE5 /* ZYProgressView.h */,
@@ -343,12 +353,14 @@
 				27B7623B1DB9BECE004CC2BC /* SnowShowViewController.m in Sources */,
 				2783DA681DB8CD9C00096AC0 /* ZYDrawTextAndPictureView.m in Sources */,
 				278C0B261DB76EAC0006FCE5 /* ViewController.m in Sources */,
-				27B7623E1DB9C2ED004CC2BC /* ZYDrawSnowView.m in Sources */,
+				27B762401DB9E8B9004CC2BC /* ZYDrawSnowView.m in Sources */,
 				278C0B231DB76EAC0006FCE5 /* AppDelegate.m in Sources */,
 				27B762351DB9ABC8004CC2BC /* NextViewController.m in Sources */,
 				273A1C361DB898EC006F85E3 /* UIViewController+Examine.m in Sources */,
 				27B762381DB9ACD8004CC2BC /* ZYCustomImageView.m in Sources */,
+				27B762431DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m in Sources */,
 				278C0B201DB76EAC0006FCE5 /* main.m in Sources */,
+				27B762461DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m in Sources */,
 				278C0B561DB76F6A0006FCE5 /* DrawShape.m in Sources */,
 				278C0B551DB76F6A0006FCE5 /* DrawLine.m in Sources */,
 			);

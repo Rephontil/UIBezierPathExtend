@@ -163,12 +163,78 @@
                     <view key="view" contentMode="scaleToFill" id="JAM-kC-Xg3" customClass="ZYDrawSnowView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df4-Sw-PNQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Seu-JT-rIx"/>
+                                    <constraint firstAttribute="width" constant="60" id="qqb-Vy-WiS"/>
+                                </constraints>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="oOS-cA-w8k" kind="show" id="8AB-Sc-FTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEL-D8-CPf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OO1-Vx-7w5"/>
+                                    <constraint firstAttribute="width" constant="60" id="tDc-1P-Hjo"/>
+                                </constraints>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <segue destination="dyC-lL-byr" kind="show" id="ANQ-qa-DXm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.93045338239999997" green="1" blue="0.7318406637" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xsf-Ap-Oew" firstAttribute="top" secondItem="Df4-Sw-PNQ" secondAttribute="bottom" constant="20" id="8RA-sH-5Mw"/>
+                            <constraint firstItem="Xsf-Ap-Oew" firstAttribute="top" secondItem="aEL-D8-CPf" secondAttribute="bottom" constant="20" id="HeY-M1-Jlu"/>
+                            <constraint firstItem="Df4-Sw-PNQ" firstAttribute="leading" secondItem="JAM-kC-Xg3" secondAttribute="leading" constant="20" id="JRX-Id-Krj"/>
+                            <constraint firstAttribute="trailing" secondItem="aEL-D8-CPf" secondAttribute="trailing" constant="20" id="pB7-IU-imG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bA6-ap-yoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1754" y="132"/>
         </scene>
+        <!--Draw Oval And Transform View Controller-->
+        <scene sceneID="D1q-Rn-4OO">
+            <objects>
+                <viewController id="dyC-lL-byr" customClass="DrawOvalAndTransformViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VgV-EZ-T84"/>
+                        <viewControllerLayoutGuide type="bottom" id="3aE-q6-Vfs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="21F-qI-aa3" customClass="DrawOvalViewAndTransformIt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="om3-sr-ilr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GUl-Sw-7Z0"/>
+                                    <constraint firstAttribute="width" constant="60" id="usi-G7-v3n"/>
+                                </constraints>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="I7I-pp-2Ad" kind="show" id="p0l-Iq-90j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84085338951301147" green="1" blue="0.86246943216329908" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="om3-sr-ilr" firstAttribute="leading" secondItem="21F-qI-aa3" secondAttribute="leading" constant="20" id="0bM-aY-B8v"/>
+                            <constraint firstItem="3aE-q6-Vfs" firstAttribute="top" secondItem="om3-sr-ilr" secondAttribute="bottom" constant="20" id="4BS-9x-rog"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SpJ-Pf-EeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2441" y="132"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="p0l-Iq-90j"/>
+        <segue reference="8AB-Sc-FTr"/>
+    </inferredMetricsTieBreakers>
 </document>

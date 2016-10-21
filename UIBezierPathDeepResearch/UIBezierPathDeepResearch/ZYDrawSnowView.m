@@ -26,7 +26,6 @@ static CGFloat heigth = 0;
     CGFloat width = arc4random_uniform(375);
     UIImage *image = [UIImage imageNamed:@"snow"];
     [image drawAtPoint:CGPointMake(width, heigth)];
-   
     if (heigth > rect.size.height) {
         heigth = 0;
     }

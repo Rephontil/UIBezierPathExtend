@@ -4,7 +4,7 @@
 //
 //  Created by ZhouYong on 16/10/19.
 //  Copyright © 2016年 Rephontil/Yong Zhou. All rights reserved.
-//
+//  Elmedia Video Player
 
 #import "AppDelegate.h"
 #import "ViewController.h"
