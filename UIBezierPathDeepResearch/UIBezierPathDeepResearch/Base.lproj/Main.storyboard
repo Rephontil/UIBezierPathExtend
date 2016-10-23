@@ -210,6 +210,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vase" translatesAutoresizingMaskIntoConstraints="NO" id="iWN-35-GQo" userLabel="底层图片"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG33" translatesAutoresizingMaskIntoConstraints="NO" id="KO5-WL-8rO" userLabel="上层图片"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="om3-sr-ilr">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GUl-Sw-7Z0"/>
@@ -231,14 +233,26 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.84085338951301147" green="1" blue="0.86246943216329908" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.15947965850000001" blue="0.16646933359999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="iWN-35-GQo" firstAttribute="leading" secondItem="21F-qI-aa3" secondAttribute="leading" id="0Nr-BM-X1A"/>
                             <constraint firstItem="om3-sr-ilr" firstAttribute="leading" secondItem="21F-qI-aa3" secondAttribute="leading" constant="20" id="0bM-aY-B8v"/>
+                            <constraint firstItem="KO5-WL-8rO" firstAttribute="leading" secondItem="21F-qI-aa3" secondAttribute="leading" id="3qK-aE-ze0"/>
                             <constraint firstItem="3aE-q6-Vfs" firstAttribute="top" secondItem="om3-sr-ilr" secondAttribute="bottom" constant="20" id="4BS-9x-rog"/>
+                            <constraint firstItem="3aE-q6-Vfs" firstAttribute="top" secondItem="iWN-35-GQo" secondAttribute="bottom" id="DdP-q3-393"/>
+                            <constraint firstAttribute="trailing" secondItem="KO5-WL-8rO" secondAttribute="trailing" id="Jm4-c1-5gP"/>
+                            <constraint firstItem="KO5-WL-8rO" firstAttribute="top" secondItem="21F-qI-aa3" secondAttribute="top" id="Lya-Sa-Bp3"/>
                             <constraint firstItem="3aE-q6-Vfs" firstAttribute="top" secondItem="bAN-eB-FER" secondAttribute="bottom" constant="20" id="N7K-FU-cJO"/>
                             <constraint firstAttribute="trailing" secondItem="bAN-eB-FER" secondAttribute="trailing" constant="20" id="eTx-97-iGK"/>
+                            <constraint firstItem="iWN-35-GQo" firstAttribute="top" secondItem="21F-qI-aa3" secondAttribute="top" id="eU9-hh-IgS"/>
+                            <constraint firstAttribute="bottom" secondItem="KO5-WL-8rO" secondAttribute="bottom" id="vyZ-uT-BrN"/>
+                            <constraint firstAttribute="trailing" secondItem="iWN-35-GQo" secondAttribute="trailing" id="zod-Re-dcV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eraseImageView" destination="KO5-WL-8rO" id="0qA-ly-80Z"/>
+                        <outlet property="imageView" destination="iWN-35-GQo" id="IvI-8B-zai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SpJ-Pf-EeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -307,6 +321,10 @@
             <point key="canvasLocation" x="3138" y="132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Vase" width="1536" height="2048"/>
+        <image name="WechatIMG33" width="1536" height="2048"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8AB-Sc-FTr"/>
         <segue reference="p0l-Iq-90j"/>

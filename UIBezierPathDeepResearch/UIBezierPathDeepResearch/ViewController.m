@@ -32,8 +32,8 @@
     _progressView.progressValue = sender.value;
     self.label.text = [NSString stringWithFormat:@"%.2f%@",sender.value * 100,@"%"];
 
-
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

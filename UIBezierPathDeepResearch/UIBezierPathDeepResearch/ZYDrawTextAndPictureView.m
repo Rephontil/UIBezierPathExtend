@@ -32,7 +32,7 @@
     [str drawInRect:rect withAttributes:attributeDic];
 
     //裁剪,裁剪的步骤一定要放在渲染的步骤之前进行.
-    UIRectClip(CGRectMake(40,40, 100, 50));
+    UIRectClip(CGRectMake(15,15, 100, 50));
     
     UIImage *image = [UIImage imageNamed:@"mile_20_icon"];
 //    [image drawInRect:rect];
