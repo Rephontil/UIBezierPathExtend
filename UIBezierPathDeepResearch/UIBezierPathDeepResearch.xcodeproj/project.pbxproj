@@ -27,6 +27,7 @@
 		27B762401DB9E8B9004CC2BC /* ZYDrawSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7623D1DB9C2EC004CC2BC /* ZYDrawSnowView.m */; };
 		27B762431DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B762421DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m */; };
 		27B762461DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B762451DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m */; };
+		8E0496FF1DBC830600FB7D3D /* UIImage+RoundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0496FE1DBC830600FB7D3D /* UIImage+RoundImage.m */; };
 		8E8C1EF81DBA6E9500450F0B /* WaterTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C1EF71DBA6E9500450F0B /* WaterTextViewController.m */; };
 		8E9DDA7F1DB7D9FB00381C78 /* ZYPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DDA7E1DB7D9FB00381C78 /* ZYPieChartView.m */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,8 @@
 		27B762421DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawOvalViewAndTransformIt.m; sourceTree = "<group>"; };
 		27B762441DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawOvalAndTransformViewController.h; sourceTree = "<group>"; };
 		27B762451DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawOvalAndTransformViewController.m; sourceTree = "<group>"; };
+		8E0496FD1DBC830600FB7D3D /* UIImage+RoundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundImage.h"; sourceTree = "<group>"; };
+		8E0496FE1DBC830600FB7D3D /* UIImage+RoundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundImage.m"; sourceTree = "<group>"; };
 		8E8C1EF61DBA6E9500450F0B /* WaterTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterTextViewController.h; sourceTree = "<group>"; };
 		8E8C1EF71DBA6E9500450F0B /* WaterTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterTextViewController.m; sourceTree = "<group>"; };
 		8E9DDA7D1DB7D9FB00381C78 /* ZYPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPieChartView.h; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				27B762371DB9ACD8004CC2BC /* ZYCustomImageView.m */,
 				273A1C341DB898EC006F85E3 /* UIViewController+Examine.h */,
 				273A1C351DB898EC006F85E3 /* UIViewController+Examine.m */,
+				8E0496FD1DBC830600FB7D3D /* UIImage+RoundImage.h */,
+				8E0496FE1DBC830600FB7D3D /* UIImage+RoundImage.m */,
 				278C0B511DB76F6A0006FCE5 /* DrawLine.h */,
 				278C0B521DB76F6A0006FCE5 /* DrawLine.m */,
 				27B762411DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.h */,
@@ -366,6 +371,7 @@
 				27B762431DBA1C81004CC2BC /* DrawOvalViewAndTransformIt.m in Sources */,
 				8E8C1EF81DBA6E9500450F0B /* WaterTextViewController.m in Sources */,
 				278C0B201DB76EAC0006FCE5 /* main.m in Sources */,
+				8E0496FF1DBC830600FB7D3D /* UIImage+RoundImage.m in Sources */,
 				27B762461DBA1CCD004CC2BC /* DrawOvalAndTransformViewController.m in Sources */,
 				278C0B561DB76F6A0006FCE5 /* DrawShape.m in Sources */,
 				278C0B551DB76F6A0006FCE5 /* DrawLine.m in Sources */,
@@ -519,6 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XXRZJ9B3W5;
 				INFOPLIST_FILE = UIBezierPathDeepResearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidstone.UIBezierPathDeepResearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XXRZJ9B3W5;
 				INFOPLIST_FILE = UIBezierPathDeepResearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidstone.UIBezierPathDeepResearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";

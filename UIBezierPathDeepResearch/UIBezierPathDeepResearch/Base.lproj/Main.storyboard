@@ -272,16 +272,25 @@
                                     <constraint firstAttribute="height" constant="150" id="WJk-8Z-4J7"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Mp-XT-CmI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Gg4-in-EvP"/>
+                                    <constraint firstAttribute="height" constant="200" id="egM-jR-aHh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.52022480159999995" green="0.8079118421" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="9Mp-XT-CmI" firstAttribute="centerX" secondItem="T3c-bm-1Qi" secondAttribute="centerX" id="IYn-B8-lbZ"/>
                             <constraint firstItem="AfT-am-L50" firstAttribute="centerX" secondItem="T3c-bm-1Qi" secondAttribute="centerX" id="OhC-uW-Cgo"/>
                             <constraint firstItem="AfT-am-L50" firstAttribute="centerY" secondItem="T3c-bm-1Qi" secondAttribute="centerY" id="OvU-cY-eY3"/>
+                            <constraint firstItem="9Mp-XT-CmI" firstAttribute="top" secondItem="Lsn-22-7Gv" secondAttribute="bottom" constant="20" id="bjE-IU-veW"/>
                             <constraint firstItem="bv1-Jw-Jta" firstAttribute="leading" secondItem="T3c-bm-1Qi" secondAttribute="leading" constant="20" id="clI-Qv-B29"/>
                             <constraint firstItem="61M-YY-Fol" firstAttribute="top" secondItem="bv1-Jw-Jta" secondAttribute="bottom" constant="20" id="dme-KB-MrV"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="haedImageView" destination="9Mp-XT-CmI" id="Doa-HC-K58"/>
                         <outlet property="imageView" destination="AfT-am-L50" id="hMh-Hb-D2R"/>
                     </connections>
                 </viewController>

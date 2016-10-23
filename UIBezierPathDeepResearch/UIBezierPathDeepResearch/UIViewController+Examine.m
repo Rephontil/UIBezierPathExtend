@@ -28,9 +28,7 @@
     
 #endif
     
-    
 }
-
 
 - (void)logViewWillAppear:(BOOL)animated {
     
