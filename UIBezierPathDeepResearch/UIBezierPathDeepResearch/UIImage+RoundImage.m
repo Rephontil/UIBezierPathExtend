@@ -10,6 +10,7 @@
 
 @implementation UIImage (RoundImage)
 
+//裁剪圆形图片，带border宽度和颜色设置
 + (UIImage *)drawOvalPictureWithImage:(UIImage *)image borderWidth:(CGFloat)borderWidth borderColour:(UIColor *)borderColour
 {
     //  UIImage *image = [UIImage imageNamed:@"WechatIMG"];
@@ -38,13 +39,37 @@
     //    获取图片
     UIImage *clipImage = UIGraphicsGetImageFromCurrentImageContext();
 
-    //    _haedImageView.image = clipImage;
-
     //    结束图形上下文
     UIGraphicsEndImageContext();
     
     return clipImage;
 }
+
+//屏幕view截图并保存到文件夹路径filePath中
++ (void)imageWithScreenShotView:(UIView *)view saveToFilePath:(NSString *)filePath
+{
+    //    1 开启上下文
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, 0);
+
+    //    2 获取图形上下文
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+
+    //    3. 将控件上面的图层渲染到上下文
+    [view.layer renderInContext:ctx];
+
+//       4.  获取当前的视图
+    UIImage *obtainImage = UIGraphicsGetImageFromCurrentImageContext();
+
+    //   5. 转换成二进制流文件
+    NSData *imageData = UIImagePNGRepresentation(obtainImage);
+
+    [imageData writeToFile:[NSString stringWithFormat:@"%@",filePath] atomically:YES];
+
+    //    关闭图形上下文
+    UIGraphicsEndImageContext();
+    
+}
+
 
 
 @end

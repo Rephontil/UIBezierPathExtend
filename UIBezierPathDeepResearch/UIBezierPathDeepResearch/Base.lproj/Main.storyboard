@@ -278,6 +278,14 @@
                                     <constraint firstAttribute="height" constant="200" id="egM-jR-aHh"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBc-mt-UPa">
+                                <frame key="frameInset" minX="153" minY="465" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="addImage"/>
+                                <connections>
+                                    <action selector="ButtonClick:" destination="gGS-Xm-Ots" eventType="touchUpInside" id="KLP-jK-jEU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52022480159999995" green="0.8079118421" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

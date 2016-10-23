@@ -17,7 +17,16 @@
 
 @end
 
+static NSUInteger num = 0;
+
 @implementation WaterTextViewController
+
+
+- (IBAction)ButtonClick:(UIButton *)sender {
+    
+    [self screenShot];
+}
+
 
 - (void)viewDidLoad
 {
@@ -26,6 +35,50 @@
 //    [self drawOvalPicture];
 //    [self drawOvalPictureWithBorder];
     _haedImageView.image = [UIImage drawOvalPictureWithImage:[UIImage imageNamed:@"WechatIMG"] borderWidth:2 borderColour:[UIColor purpleColor]];
+
+    UIImage *image = [UIImage imageNamed:@"WechatIMG"];
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    [UIImage imageWithScreenShotView:self.view saveToFilePath:@"/Users/pm/Documents/小马哥/Quartz 2D/baby.png"];
+
+}
+
+//屏幕截图
+- (void)screenShot
+{
+//    1 开启上下文
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0);
+
+//    2 获取图形上下文
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+
+//   将控件上面的图层渲染到上下文
+    [self.view.layer renderInContext:ctx];
+
+    UIImage *obtainImage = UIGraphicsGetImageFromCurrentImageContext();
+
+//    转换成二进制流文件
+    NSData *imageData = UIImagePNGRepresentation(obtainImage);
+
+    [imageData writeToFile:[NSString stringWithFormat:@"/Users/pm/Desktop/自学成才/mile_20_icon/LIUWenXiu%ld.png",num] atomically:YES];
+
+    num += 1;
+
+//    关闭图形上下文
+    UIGraphicsEndImageContext();
+
+}
+
+
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *) error
+                 contextInfo: (void *) contextInfo
+{
+    if (error != NULL) {
+        NSLog(@"SAVE TO ALBUM Failed");
+
+    }else{
+        NSLog(@"SAVE TO ALBUM SUCCESS");
+    }
 }
 
 
